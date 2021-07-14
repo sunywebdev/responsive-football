@@ -57,7 +57,7 @@ body {
     transition: all .5s ease-in-out;
 }
 
-.right-hero img:hover {
+.right-hero:hover img {
     transform: scale(1.1);
 }
 
