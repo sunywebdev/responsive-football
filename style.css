@@ -121,6 +121,7 @@ article {
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
     padding: 2% 0 4% 0;
     background-color: #fff;
+    width: 90%;
 }
 
 .newsletter .title h2 {
@@ -185,6 +186,7 @@ input {
     text-align: center;
     padding: 15px 0 40px 0;
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
+    width: 90%;
 }
 
 .our-partners h2 {
@@ -359,7 +361,7 @@ Small devices (landscape phones, 576px and up)
     }
 
     .newsletter .title p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .newsletter .input {
