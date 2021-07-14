@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* -------------------------
+        Main section start 
+    --------------------------- */
 body {
     margin: 0 auto;
     padding: 0;
@@ -7,7 +10,10 @@ body {
         sans-serif;
 }
 
-header {
+/* -------------------------
+        Hero section start 
+    --------------------------- */
+.hero {
     background-color: #2D25A0;
     display: grid;
     grid-template-columns: 485px 556px;
@@ -18,7 +24,7 @@ header {
     height: 677px;
 }
 
-header .left-header h1 {
+.left-hero h1 {
     height: 230px;
     font-weight: 700;
     font-size: 64px;
@@ -27,31 +33,48 @@ header .left-header h1 {
     line-height: 80px;
 }
 
-header .left-header a {
+.left-hero a {
     height: 44px;
     padding: 10px 24px;
     background-color: #E02C6D;
     text-decoration: none;
     color: #FFFFFF;
-
+    transition: all .5s ease-in-out;
 }
 
-header .left-header i {
+.left-hero a:hover {
+    background-color: #fff;
+    color: #E02C6D;
+}
+
+.left-hero i {
     padding-left: 8px;
 }
 
-header .right-header img {
+.right-hero img {
     width: 556.01px;
     height: 438px;
+    transition: all .5s ease-in-out;
 }
 
-main .articles {
+.right-hero img:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------------
+        Hero section end 
+    -------------------------- */
+
+/* -------------------------
+        articles section start 
+    --------------------------- */
+.articles {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 330px);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    margin: 70px 210px 165px 180px;
+    margin: 70px 210px 70px 180px;
 }
 
 article {
@@ -65,6 +88,11 @@ article {
 .articles img {
     width: 300px;
     height: 256px;
+    transition: all .5s ease-in-out;
+}
+
+.articles img:hover {
+    transform: scale(1.1);
 }
 
 .articles h2 {
@@ -80,7 +108,124 @@ article {
     margin: 10px 0;
 }
 
+/* -------------------------
+        articles section end 
+    --------------------------- */
 
+/* -------------------------
+        newsletter section start  
+    ---------------------------   */
+.newsletter {
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
+    padding: 2% 0 4% 0;
+    background-color: #fff;
+}
+
+.newsletter .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 3%;
+    margin: 0;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #2D25A0;
+}
+
+.newsletter .title p {
+    margin: 0 auto;
+    font-size: 25px;
+    opacity: 80%;
+    max-width: 50%;
+}
+
+.newsletter .input {
+    width: 400px;
+    height: 32px;
+    border-radius: 15px 0 0 15px;
+    text-indent: 10px;
+}
+
+form {
+    padding: 3% 0 2% 0;
+}
+
+input {
+    border: 2px solid #2D25A0;
+    font-weight: 700;
+}
+
+
+.newsletter .submit {
+    width: 100px;
+    height: 38px;
+    margin-left: -5px;
+    border-radius: 0 15px 15px 0;
+    background-color: #2D25A0;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter .submit:hover {
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
+    color: #2D25A0;
+}
+
+/* -------------------------
+         newsletter section end 
+    --------------------------- */
+
+/* -------------------------
+        our-partners section start 
+    ---------------------------     */
+.our-partners {
+    margin: 5% auto 0 auto;
+    text-align: center;
+    padding: 15px 0 40px 0;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
+}
+
+.our-partners h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2D25A0;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin: 5px 0 20px 0;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners img {
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    transition: all .5s ease-in-out;
+}
+
+.partners img:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------------
+        our-partners section end 
+    --------------------------- */
+
+/* -------------------------
+        Main section end 
+    ---------------------------    */
+
+/* -------------------------
+        Footer section start 
+    --------------------------- */
 footer {
     width: 483.87px;
     height: 213px;
@@ -106,6 +251,41 @@ footer {
     text-align: center;
     line-height: 2;
     margin: 10px 10px;
+    animation: in 0.5s linear;
+}
+
+.footer-mid i:hover {
+    animation: out 0.5s linear;
+    color: #fff;
+    background-color: #2D25A0;
+}
+
+@keyframes in {
+    from {
+        transform: rotate(0deg);
+        color: #fff;
+        background-color: #2D25A0;
+    }
+
+    to {
+        transform: rotate(360deg);
+        color: #fff;
+        background-color: #2D25A0;
+    }
+}
+
+@keyframes out {
+    from {
+        transform: rotate(360deg);
+        color: #fff;
+        background-color: #2D25A0;
+    }
+
+    to {
+        transform: rotate(0deg);
+        color: #fff;
+        background-color: #2D25A0;
+    }
 }
 
 .footer-bottom p {
@@ -114,8 +294,14 @@ footer {
     margin: 10px 0;
 }
 
+/* ------------------------
+        Footer section end 
+    -------------------------- */
 
-/* Small devices (landscape phones, 576px and up) */
+
+/* ------------------------
+Small devices (landscape phones, 576px and up)
+    -------------------------- */
 @media (max-width: 576px) {
     header {
         background-color: #2D25A0;
@@ -125,7 +311,7 @@ footer {
         align-items: center;
     }
 
-    header .left-header h1 {
+    header .left-hero h1 {
         font-size: 36px;
         width: 278px;
         height: 138px;
@@ -133,16 +319,15 @@ footer {
         padding-left: 16px;
     }
 
-    header .left-header a {
+    header .left-hero a {
         width: 168px;
         height: 44px;
         margin: 30px 0 0 19px;
-
     }
 
-    header .right-header img {
-        width: 329px;
-        height: 259.17px;
+    header .right-hero img {
+        width: 90%;
+        height: auto;
         padding: 50px 16px 61px 15px;
     }
 
@@ -150,15 +335,45 @@ footer {
         display: grid;
         justify-content: center;
         grid-template-columns: 330px;
-        grid-column-gap: 30px;
-        grid-row-gap: 27px;
+        grid-row-gap: 24px;
         margin: 47px 15px 60px 15px !important;
     }
-
 
     .article img {
         width: 300px;
         height: 256px;
+    }
+
+    .partners {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .partners img {
+        width: auto;
+    }
+
+    .newsletter {
+        margin: 11% auto;
+    }
+
+    .newsletter .title h2 {
+        font-size: 20px;
+    }
+
+    .newsletter .title p {
+        font-size: 14px;
+    }
+
+    .newsletter .input {
+        width: 55%;
+        height: 25px;
+    }
+
+    .newsletter .submit {
+        width: 26%;
+        height: 31px;
+        margin-left: -7px;
     }
 
     footer {
