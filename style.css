@@ -377,7 +377,7 @@ Small devices (landscape phones, 576px and up)
         width: 280px;
         height: 175px;
         margin: 0 auto;
-        padding: 43px 62px 187px 18px;
+        padding: 43px 0 187px 0;
     }
 
     .footer-bottom p {
